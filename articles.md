@@ -271,3 +271,8 @@ There are some other endpoint that you can explore.
 
 The complete code of this project is available at 
 https://github.com/gitsangramdesai/dynamoose-express.
+
+In DynamoDb there is no inbuild functionlity that is similar to auto-increment id in mysql,
+people usually use uuid's for primary key.primary key in Dynamodb is made up of partition key 
+& sort key.Records with same partition key will be saved in one partition & sorted by 
+sort key(range key).You can also define primary key without sort key(range key)
